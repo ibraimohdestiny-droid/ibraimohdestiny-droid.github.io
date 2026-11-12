@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The personal website of Destiny Harry, also known as Ibrahimoh Destiny Collins.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#101010">
+  <title>Destiny Harry | Ibrahimoh Destiny Collins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">DH<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</p>
+        <h1>IBRAHIMOH<br><span>DESTINY COLLINS</span></h1>
+        <p class="nickname">Also known as <strong>DESTINY HARRY</strong></p>
+        <p class="nickname">Born in <strong>IFON, OSE LGA, ONDO STATE</strong></p>
+        <p class="intro">A curious learner with an interest in technology, computer science and programming.</p>
+        <a class="gold-button" href="#about">Discover more</a>
+      </div>
+      <div class="portrait-wrap">
+        <img src="assets/destiny-profile.jpg" alt="Portrait of Destiny Harry">
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>About <span>Destiny</span></h2>
+      <p>My name is Ibrahimoh Destiny Collins, also known as Destiny Harry. I was born in Ifon, Ose Local Government Area, Ondo State. I enjoy learning, exploring technology and developing my computer skills. This website is my small corner of the internet where I can introduce myself and share projects I create.</p>
+    </section>
+
+    <section class="section projects" id="projects">
+      <p class="eyebrow">WHAT I'M EXPLORING</p>
+      <h2>My <span>Projects</span></h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Programming</h3>
+          <p>Learning the foundations of coding and problem-solving.</p>
+        </article>
+        <article class="project-card">
+          <h3>AI & Automation</h3>
+          <p>Exploring useful ways to build with AI and automation tools.</p>
+        </article>
+        <article class="project-card">
+          <h3>Web Design</h3>
+          <p>Practising how to create simple, helpful websites.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Destiny Harry. Personal website.</p>
+    <p class="small">Only share information here that you are comfortable making public.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

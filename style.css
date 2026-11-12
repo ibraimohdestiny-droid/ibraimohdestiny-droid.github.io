@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+:root { --bg:#101010; --panel:#191919; --gold:#d7b46a; --text:#f4f0e7; --muted:#b8b2a6; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:Arial,Helvetica,sans-serif; line-height:1.65; }
+.topbar { display:flex; justify-content:space-between; align-items:center; padding:20px 8%; border-bottom:1px solid #2c2922; }
+.brand { color:var(--text); text-decoration:none; font-size:1.5rem; font-weight:800; letter-spacing:2px; }
+.brand span, h1 span, h2 span { color:var(--gold); }
+nav { display:flex; gap:24px; }
+nav a { color:var(--muted); text-decoration:none; font-size:.95rem; }
+nav a:hover { color:var(--gold); }
+.hero { min-height:76vh; display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:45px; padding:70px 10%; }
+.eyebrow { color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:3px; }
+h1 { font-size:clamp(2.3rem,6vw,5rem); line-height:1.05; letter-spacing:-2px; margin:18px 0; }
+.nickname { color:var(--muted); }
+.nickname strong { color:var(--gold); letter-spacing:1px; }
+.intro { max-width:520px; color:var(--muted); margin:24px 0 30px; }
+.gold-button { display:inline-block; background:var(--gold); color:#17130b; text-decoration:none; padding:12px 22px; border-radius:3px; font-weight:700; }
+.portrait-wrap { max-width:370px; justify-self:center; padding:10px; border:1px solid var(--gold); box-shadow:16px 16px 0 #332a18; }
+.portrait-wrap img { display:block; width:100%; max-height:480px; object-fit:cover; object-position:center 25%; }
+.section { padding:75px 10%; border-top:1px solid #2b2924; }
+.section h2 { font-size:clamp(2rem,4vw,3rem); margin:8px 0 18px; }
+.section > p:not(.eyebrow) { max-width:760px; color:var(--muted); }
+.project-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+.project-card { background:var(--panel); border:1px solid #302b20; padding:24px; }
+.project-card h3 { color:var(--gold); margin-top:0; }
+.project-card p { color:var(--muted); margin-bottom:0; }
+footer { text-align:center; padding:30px 8%; color:var(--muted); border-top:1px solid #2b2924; }
+.small { font-size:.8rem; }
+@media (max-width:760px) {
+  .hero { grid-template-columns:1fr; padding:55px 8%; text-align:center; }
+  .intro { margin-left:auto; margin-right:auto; }
+  .portrait-wrap { width:min(82%,320px); grid-row:1; }
+  .project-grid { grid-template-columns:1fr; }
+  .topbar { padding:16px 6%; }
+}
